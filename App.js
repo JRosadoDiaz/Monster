@@ -1,13 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
+// import Monsters from './src/components/monsters'
+// import Talking from './src/components/talking';
+// import Chuck from './src/components/chuck';
+import Giphy from './src/components/giphy';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView>
+      {/* <Monsters />
+      <Talking />
+      <Text></Text>
+      <Text></Text>
+      <Chuck name="Chuck"/> */}
+      <Giphy search="coding" />
+      <Giphy search="fun" />
+      <Giphy search="puppy" />
+    </ScrollView>
   );
 }
 
